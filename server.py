@@ -15,7 +15,7 @@ app = Flask(__name__)
 FB_API_URL = 'https://graph.facebook.com/v2.6/me/messages'
 VERIFY_TOKEN = 'e504rm2gv+77aiMnPe/SDibL2X7Wxp6ZzcRY7TdjU6E=' # generated using $openssl rand -base64 32
 # generated from FB page
-PAGE_ACCESS_TOKEN = 'EAAFGeXmRGRQBAFA73UuoubSMMkGt3Jf9TkOatCeZBOCOR2QMgEeMUTCxYaLknvKvLjVdVB5HAWbJZBqoRpgMEqr8ZAZBVSFZC3WwWeB23svZBuHHjnZAIaCmpoZAc3oGhOXWUWZBHhHMC7dPn9KuWWw5ThsdxAVrHGYZATMqVi9O1KywZDZD'
+PAGE_ACCESS_TOKEN = '<token here>'
 
 # Define variables
 name = "Mona"
