@@ -1,13 +1,5 @@
-#-------------------------------------------------------------------------------
-# Name:        Median
-# Purpose:     Find a median in a list
-#
-# Author:      thiteixeira
-#
-# Created:     20/06/2014
-# Copyright:   (c) thiteixeira 2014
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+#!/usr/bin/env python
+
 
 def median(my_list):
     my_list.sort()             # Sort the list
@@ -18,3 +10,8 @@ def median(my_list):
         return average
     else:
         return my_list[int(center - 0.5)]
+
+
+alist = [x for x in range(10)]
+print(alist)
+print('Median is: ' + str(median(alist)))

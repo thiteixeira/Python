@@ -1,13 +1,6 @@
-#-------------------------------------------------------------------------------
-# Name:        Remove Duploicates
-# Purpose:     Remove duplicates in a list
-#
-# Author:      thiteixeira
-#
-# Created:     20/06/2014
-# Copyright:   (c) thiteixeira 2014
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+#!/usr/bin/env python
+
+import numpy as np
 
 def remove_duplicates(numbers):
     numbers = list(numbers)
@@ -16,3 +9,8 @@ def remove_duplicates(numbers):
         if i not in new_list:
             new_list.append(i)
     return new_list
+
+
+alist = [np.random.randint(0,10) for _ in range(25)]
+print('alist: ' + str(alist))
+print('w/o dups: ' + str(remove_duplicates(alist)))

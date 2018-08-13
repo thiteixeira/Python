@@ -1,13 +1,5 @@
-#-------------------------------------------------------------------------------
-# Name:        Prime Number
-# Purpose:     Know if a number is prime or not
-#
-# Author:      thiteixeira
-#
-# Created:     19/06/2014
-# Copyright:   (c) thiteixeira 2014
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+#!/usr/bin/env python
+
 
 def is_prime(x):
     if x < 2:
@@ -18,3 +10,8 @@ def is_prime(x):
             return False
 
     return True
+
+alist = [i for i in range(100)]
+for i in range(len(alist)):
+    if is_prime(i):
+        print(i)
