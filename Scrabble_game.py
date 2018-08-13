@@ -1,13 +1,7 @@
-#-------------------------------------------------------------------------------
-# Name:        Scrabble Game
-# Purpose:
-#
-# Author:      thiteixeira
-#
-# Created:     19/06/2014
-# Copyright:   (c) thiteixeira 2014
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+#!/usr/bin/env python
+'''
+Scrabble scores
+'''
 
 score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
          "f": 4, "i": 1, "h": 4, "k": 5, "j": 8, "m": 3,
@@ -18,5 +12,7 @@ score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
 def scrabble_score(word):
     points = 0
     for i in word.lower():
-        points = points + score[i]
+        points += score[i]
     return points
+
+print(scrabble_score('Python'))
