@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # echo_server.py
 
 import socket
