@@ -1,4 +1,4 @@
-# Python Basics
+# Python Codes
 
-A small collection of the basics in Python, including a `web crawling` and a `Facebook message bot`.
+A (growing) variety of examples using Python 3.6
 
