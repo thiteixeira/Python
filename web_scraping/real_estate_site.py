@@ -16,12 +16,12 @@ url = 'http://www.procuraseimovel.com.br/portal/imoveis/rs/rio-grande/venda?pagi
 
 
 def main():
-  max_pages = 10
+  max_pages = 20
   page = 1
   while page < max_pages:
     res = requests.get(url + str(page) + '_2_0')
     if res.status_code != 200:
-      return False
+      break
     
     so = BeautifulSoup(res.text, "lxml")
     titles = so.findAll('p', {'class': 'descricao'})
@@ -30,8 +30,8 @@ def main():
     for p, t in zip(prices, titles):
       price = re.sub("[^0-9|,]", "", p.text).replace(",", ".")
       if len(price) > 0:
-        print(t.text)
-        print(float(price))
+        if float(price) > 400000:
+          print(float(price), t.text)
       
     page += 1  
 
